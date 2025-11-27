@@ -323,6 +323,20 @@
 
     const goalImg = new Image();
     goalImg.src = 'https://i.ibb.co/3JCnKQ2/Chat-GPT-Image-20-2025-15-59-48.png';
+	
+	// ✅ Перерисовываем лабиринт, когда картинки прогрузились
+let imagesToLoad = 4;
+let imagesLoaded = 0;
+
+[playerImg, keyImg1, keyImg2, goalImg].forEach(img => {
+  img.onload = () => {
+    imagesLoaded++;
+    // когда все 4 картинки загрузились и лабиринт уже создан — перерисовать
+    if (imagesLoaded === imagesToLoad && maze.length > 0 && ctx && canvas) {
+      render();
+    }
+  };
+});
 
     const quizQuestions = [
   ["She ___ English every day.","studies","study","studying",1],
@@ -402,7 +416,17 @@
       window.addEventListener('resize', resizeCanvas);
       generateNewMaze();
       render();
-
+// ✅ Когда картинки подгрузятся — сразу перерисовать лабиринт,
+  // чтобы вместо кружков появились изображения еды/героя/выхода
+  [playerImg, keyImg1, keyImg2, goalImg].forEach(img => {
+    if (!img.complete || !img.naturalWidth) {
+      img.onload = () => {
+        if (maze.length > 0 && ctx && canvas) {
+          render();
+        }
+      };
+    }
+  });
       document.getElementById('new-maze').addEventListener('click', generateNewMaze);
       document.getElementById('replay').addEventListener('click', replay);
       document.getElementById('close-modal').addEventListener('click', () => {
