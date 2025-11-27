@@ -76,13 +76,13 @@
     #key-0,
     #key-1,
     #key-2 {
-      background-image: url('https://i.ibb.co/RTxYh3tG/food2-png.png');
+      background-image: url('https://i.ibb.co/C3CcTYFP/food1-png.png');
     }
 
     #key-3,
     #key-4,
     #key-5 {
-      background-image: url('https://i.ibb.co/ymqs99Wd/food1-png.png');
+      background-image: url('https://i.ibb.co/nNWShMyS/food2-png.png');
     }
 
     #canvas-container {
@@ -316,66 +316,67 @@
     playerImg.src = 'https://i.ibb.co/tp4n66N4/hero-png.png';
 
     const keyImg1 = new Image();
-    keyImg1.src = 'https://i.ibb.co/RTxYh3tG/food2-png.png';
+    keyImg1.src = 'https://i.ibb.co/nNWShMyS/food2-png.png';
 
     const keyImg2 = new Image();
-    keyImg2.src = 'https://i.ibb.co/ymqs99Wd/food1-png.png';
+    keyImg2.src = 'https://i.ibb.co/C3CcTYFP/food1-png.png';
 
     const goalImg = new Image();
     goalImg.src = 'https://i.ibb.co/3JCnKQ2/Chat-GPT-Image-20-2025-15-59-48.png';
 
     const quizQuestions = [
-      ["She ___ English every day.", "studies", "study", "studying", 1],
-      ["They ___ happy today.", "are", "is", "am", 1],
-      ["He ___ football on Sundays.", "plays", "play", "playing", 1],
-      ["I ___ a student.", "am", "is", "are", 1],
-      ["We ___ late for school.", "are", "is", "am", 1],
-      ["The dog ___ very friendly.", "is", "are", "am", 1],
-      ["Tom ___ early every morning.", "gets up", "get up", "getting up", 1],
-      ["She ___ her room every weekend.", "cleans", "clean", "cleaning", 1],
-      ["You ___ my best friend.", "are", "is", "am", 1],
-      ["The children ___ at school.", "are", "is", "am", 1],
-      ["He ___ TV in the evening.", "watches", "watch", "watching", 1],
-      ["The weather ___ nice today.", "is", "are", "am", 1],
-      ["I ___ from India.", "am", "is", "are", 1],
-      ["She ___ to music every evening.", "listens", "listen", "listening", 1],
-      ["We ___ ready to start.", "are", "is", "am", 1],
-      ["My parents ___ very busy.", "are", "is", "am", 1],
-      ["She ___ in a big house.", "lives", "live", "living", 1],
-      ["The boys ___ excited.", "are", "is", "am", 1],
-      ["I ___ a good swimmer.", "am", "is", "are", 1],
-      ["They ___ in the park now.", "are", "is", "am", 1],
-      ["He ___ to school by bus.", "goes", "go", "going", 1],
-      ["The cat ___ on the sofa.", "is", "are", "am", 1],
-      ["She ___ her lunch at 12.", "eats", "eat", "eating", 1],
-      ["You ___ very kind.", "are", "is", "am", 1],
-      ["My sister ___ a teacher.", "is", "are", "am", 1],
-      ["We ___ dinner at 7.", "eat", "eats", "eating", 1],
-      ["He ___ the guitar well.", "plays", "play", "playing", 1],
-      ["They ___ tired after the trip.", "are", "is", "am", 1],
-      ["She ___ fast.", "runs", "run", "running", 1],
-      ["The baby ___ asleep now.", "is", "are", "am", 1],
-      ["He ___ to the gym on Fridays.", "goes", "go", "going", 1],
-      ["We ___ in the same class.", "are", "is", "am", 1],
-      ["She ___ her plants every day.", "waters", "water", "watering", 1],
-      ["The room ___ clean.", "is", "are", "am", 1],
-      ["They ___ good students.", "are", "is", "am", 1],
-      ["He ___ his friends on weekends.", "visits", "visit", "visiting", 1],
-      ["I ___ very happy today.", "am", "is", "are", 1],
-      ["The movie ___ interesting.", "is", "are", "am", 1],
-      ["She ___ very quickly.", "works", "work", "working", 1],
-      ["We ___ at home now.", "are", "is", "am", 1],
-      ["He ___ his room after school.", "cleans", "clean", "cleaning", 1],
-      ["The students ___ ready.", "are", "is", "am", 1],
-      ["She ___ in a small town.", "lives", "live", "living", 1],
-      ["You ___ very funny.", "are", "is", "am", 1],
-      ["They ___ in the library.", "are", "is", "am", 1],
-      ["He ___ fast food often.", "eats", "eat", "eating", 1],
-      ["The car ___ blue.", "is", "are", "am", 1],
-      ["We ___ English very well.", "speak", "speaks", "speaking", 1],
-      ["She ___ her bike to school.", "rides", "ride", "riding", 1],
-      ["I ___ very busy today.", "am", "is", "are", 1]
-    ];
+  ["She ___ English every day.","studies","study","studying",1],
+  ["They ___ happy today.","is","am","are",3],
+  ["He ___ football on Sundays.","play","plays","playing",2],
+  ["I ___ a student.","are","am","is",2],
+  ["We ___ late for school.","are","am","is",1],
+  ["The dog ___ very friendly.","is","am","are",1],
+  ["Tom ___ early every morning.","getting up","get up","gets up",3],
+  ["She ___ her room every weekend.","cleans","cleaning","clean",1],
+  ["You ___ my best friend.","are","am","is",1],
+  ["The children ___ at school.","am","are","is",2],
+  ["He ___ TV in the evening.","watches","watch","watching",1],
+  ["The weather ___ nice today.","are","is","am",2],
+  ["I ___ from India.","am","is","are",1],
+  ["She ___ to music every evening.","listen","listens","listening",2],
+  ["We ___ ready to start.","is","am","are",3],
+  ["My parents ___ very busy.","are","am","is",1],
+  ["She ___ in a big house.","living","lives","live",2],
+  ["The boys ___ excited.","am","are","is",2],
+  ["I ___ a good swimmer.","am","is","are",1],
+  ["They ___ in the park now.","is","are","am",2],
+  ["He ___ to school by bus.","goes","go","going",1],
+  ["The cat ___ on the sofa.","is","are","am",1],
+  ["She ___ her lunch at 12.","eats","eating","eat",1],
+  ["You ___ very kind.","is","are","am",2],
+  ["My sister ___ a teacher.","is","am","are",1],
+  ["We ___ dinner at 7.","eat","eating","eats",1],
+  ["He ___ the guitar well.","play","playing","plays",3],
+  ["They ___ tired after the trip.","is","are","am",2],
+  ["She ___ fast.","runs","running","run",1],
+  ["The baby ___ asleep now.","is","am","are",1],
+  ["He ___ to the gym on Fridays.","going","go","goes",3],
+  ["We ___ in the same class.","am","are","is",2],
+  ["She ___ her plants every day.","waters","watering","water",1],
+  ["The room ___ clean.","are","am","is",3],
+  ["They ___ good students.","am","are","is",2],
+  ["He ___ his friends on weekends.","visits","visit","visiting",1],
+  ["I ___ very happy today.","is","are","am",3],
+  ["The movie ___ interesting.","am","is","are",2],
+  ["She ___ very quickly.","works","work","working",1],
+  ["We ___ at home now.","is","are","am",2],
+  ["He ___ his room after school.","clean","cleaning","cleans",3],
+  ["The students ___ ready.","is","am","are",3],
+  ["She ___ in a small town.","live","lives","living",2],
+  ["You ___ very funny.","are","is","am",1],
+  ["They ___ in the library.","are","am","is",1],
+  ["He ___ fast food often.","eat","eats","eating",2],
+  ["The car ___ blue.","is","am","are",1],
+  ["We ___ English very well.","speak","speaking","speaks",1],
+  ["She ___ her bike to school.","riding","ride","rides",3],
+  ["I ___ very busy today.","am","are","is",1]
+];
+
 
     // === ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ===
     let maze = [];
